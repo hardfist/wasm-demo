@@ -1,0 +1,14 @@
+{
+  "name": "wasm-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --experimental-wasi-unstable-preview1 index.js",
+    "debug": "lldb -- node --experimental-wasi-unstable-preview1 index.js",
+    "wasm:debug": "lldb -- wasmtime -g hello.wasm "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
